@@ -5,12 +5,12 @@ This project simulates a real-world Security Operations Center (SOC) environment
 ## 🔧 Tools & Technologies
 - Sysmon
 - LimaCharlie EDR
-- Command & Control Framework (e.g., Cobalt Strike or Sliver)
+- Sliver Command & Control Framework
 - Windows VM (Victim)
-- Kali Linux (Attacker)
+- Ubuntu Linux (Attacker)
 
 ## 🛠️ What I Did
-- **Disabled EDR** to test system exposure to threats.
+- **Disabled Windows Defender** to test system exposure to threats.
 - **Configured Sysmon** for detailed event logging and telemetry.
 - **Deployed LimaCharlie**, enabling endpoint visibility and response.
 - **Set up a C2 framework** to simulate real-world attack vectors.
