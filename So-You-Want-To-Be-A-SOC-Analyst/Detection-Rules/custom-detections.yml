@@ -1,0 +1,9 @@
+rules:
+  - id: disable_edr_registry
+    description: Detect registry changes to disable EDR.
+    detection:
+      selection:
+        EventID: 13
+        TargetObject|contains: 'Run'
+        Details|contains: 'edr'
+      condition: selection

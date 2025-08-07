@@ -1,0 +1,5 @@
+[Steps to Disable EDR]
+- Boot into Safe Mode
+- Run: sc stop edrservice
+- Remove EDR executables
+- Disable EDR startup in registry: HKLM\Software\Microsoft\Windows\CurrentVersion\Run

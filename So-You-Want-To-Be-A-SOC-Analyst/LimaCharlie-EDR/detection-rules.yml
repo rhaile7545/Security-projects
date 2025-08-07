@@ -1,0 +1,8 @@
+rules:
+  - id: suspicious_powershell_execution
+    description: Detect PowerShell used with base64 encoding.
+    detection:
+      selection:
+        CommandLine|contains: 'powershell'
+        CommandLine|contains: 'base64'
+      condition: selection
